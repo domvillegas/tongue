@@ -1,0 +1,22 @@
+@use "./global-utils.module.scss" as *;
+
+html {
+  height: 100vh;
+}
+
+body {
+  height: 100%;
+  background: $black;
+  color: $white;
+  font-family: "Oswald", sans-serif;
+  margin: 0;
+}
+
+.largeText {
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: 700;
+}

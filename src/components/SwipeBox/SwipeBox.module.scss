@@ -1,0 +1,15 @@
+@use "../../styles/global-utils.module.scss" as *;
+
+.swipeBox {
+  border-top: 1px solid $white;
+  border-bottom: 1px solid $white;
+  cursor: pointer;
+  overflow: scroll;
+  display: flex;
+  align-items: center;
+}
+
+.scrollArea {
+  min-width: 200vw;
+  min-height: 100%;
+}

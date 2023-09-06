@@ -1,0 +1,16 @@
+.home {
+  background-image: url("../assets/backgrounds/lauren.jpg");
+  background-size: cover;
+  background-position: 50% 100%;
+}
+
+.swipeBoxesContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  > div {
+    flex-grow: 1;
+    padding: 0 20px;
+  }
+}
