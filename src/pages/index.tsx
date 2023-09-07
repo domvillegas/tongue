@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import SwipeBox from "@/components/SwipeBox/SwipeBox";
 import styles from "./index.module.scss";
 
@@ -11,12 +11,18 @@ const boxNames = [
 ];
 
 const Home = () => {
+  const swipeBoxRefs = useRef<HTMLDivElement[]>([]);
+
   return (
     <div className={styles.home}>
       <div className={styles.swipeBoxesContainer}>
         {boxNames.map((name, index) => {
           return (
-            <SwipeBox className="largeText bold" key={index} text={name} />
+            <SwipeBox
+              ref={(element) => (swipeBoxRefs.current[index] = element!)}
+              key={index}
+              text={name}
+            />
           );
         })}
       </div>

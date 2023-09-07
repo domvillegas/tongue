@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import styles from "./SwipeBox.module.scss";
 
 interface Props {
@@ -6,12 +6,20 @@ interface Props {
   className?: string;
 }
 
-const SwipeBox = ({ text, className }: Props) => {
-  return (
-    <div className={`${styles.swipeBox} ${className}`}>
-      <div className={styles.scrollArea}>{text}</div>
-    </div>
-  );
-};
+const SwipeBox = forwardRef<HTMLDivElement, Props>(
+  ({ text, className }, ref) => {
+    return (
+      <div
+        ref={ref}
+        className={`${styles.swipeBox} ${className ? className : ""}`}
+      >
+        <div className={styles.text}>
+          <h2 className="largeText">{text}</h2>
+        </div>
+        <div className={styles.fillerDiv} />
+      </div>
+    );
+  }
+);
 
 export default SwipeBox;
