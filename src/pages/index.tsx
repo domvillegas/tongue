@@ -1,6 +1,7 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import SwipeBox from "@/components/SwipeBox/SwipeBox";
 import styles from "./index.module.scss";
+import { useOpacityValue } from "@/contexts/opacity";
 
 const boxNames = [
   "The Company",
@@ -11,7 +12,14 @@ const boxNames = [
 ];
 
 const Home = () => {
+  const { opacity, setOpacity } = useOpacityValue();
   const swipeBoxRefs = useRef<HTMLDivElement[]>([]);
+
+  useEffect(() => {
+    (
+      document.querySelector("body") as HTMLBodyElement
+    ).style.opacity = `${opacity}`;
+  });
 
   return (
     <div className={styles.home}>
@@ -19,6 +27,13 @@ const Home = () => {
         {boxNames.map((name, index) => {
           return (
             <SwipeBox
+              onScroll={() =>
+                setOpacity(
+                  swipeBoxRefs.current[index]?.getBoundingClientRect().x /
+                    swipeBoxRefs.current[index]?.getBoundingClientRect().width +
+                    1,
+                )
+              }
               ref={(element) => (swipeBoxRefs.current[index] = element!)}
               key={index}
               text={name}

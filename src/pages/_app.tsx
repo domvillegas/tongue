@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { AppProps } from "next/app";
 import "../styles/globals-styles.scss";
 import Head from "next/head";
+import { OpacityContextProvider, useOpacityValue } from "@/contexts/opacity";
 
 export default function MyApp({ Component, pageProps }: AppProps) {
+  const { opacity } = useOpacityValue();
+
   return (
     <>
       <Head>
@@ -14,7 +17,9 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           rel="stylesheet"
         />
       </Head>
-      <Component {...pageProps} />
+      <OpacityContextProvider>
+        <Component {...pageProps} />
+      </OpacityContextProvider>
     </>
   );
 }
