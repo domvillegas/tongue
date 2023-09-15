@@ -6,8 +6,7 @@
   cursor: pointer;
   overflow: scroll;
   display: flex;
-  align-items: center;
-  height: 19.7vh;
+  min-height: 100%;
 
   scrollbar-width: none;
   -ms-overflow-style: none;
@@ -32,4 +31,39 @@
   background: $white;
   margin: 0;
   padding: 0;
+  opacity: 0;
+  animation-name: fillerDivOpacity;
+  animation-duration: 1.8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fillerDivOpacity {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0.7;
+  }
+
+  41% {
+    opacity: 1;
+  }
+
+  45% {
+    opacity: 0.5;
+  }
+
+  47% {
+    opacity: 0.4;
+  }
+
+  48% {
+    opacity: 0.4;
+  }
+
+  50% {
+    opacity: 0;
+  }
 }

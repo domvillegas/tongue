@@ -1,12 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { AppProps } from "next/app";
 import "../styles/globals-styles.scss";
 import Head from "next/head";
-import { OpacityContextProvider, useOpacityValue } from "@/contexts/opacity";
+import { OpacityContextProvider } from "@/contexts/opacity";
 
 export default function MyApp({ Component, pageProps }: AppProps) {
-  const { opacity } = useOpacityValue();
-
   return (
     <>
       <Head>

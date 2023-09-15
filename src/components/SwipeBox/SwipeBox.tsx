@@ -1,26 +1,32 @@
-import React, { forwardRef } from "react";
+import React, { forwardRef, TouchEvent } from "react";
 import styles from "./SwipeBox.module.scss";
-import { useOpacityValue } from "@/contexts/opacity";
 
 interface Props {
   text: string;
   className?: string;
-  onScroll: () => void;
+  onSwipe: () => void;
+  animationOrder: number;
+  onClick: () => void;
+  onTouchEnd: (event: TouchEvent<HTMLDivElement>) => void;
 }
 
 const SwipeBox = forwardRef<HTMLDivElement, Props>(
-  ({ text, className, onScroll }, ref) => {
-    const { opacity } = useOpacityValue();
+  ({ text, className, animationOrder, onSwipe, onClick, onTouchEnd }, ref) => {
     return (
       <div
-        style={{ opacity: opacity }}
-        onScroll={onScroll}
+        onScroll={onSwipe}
+        onClick={onClick}
         className={`${styles.swipeBox} ${className ? className : ""}`}
       >
-        <div ref={ref} className={styles.text}>
+        <div onTouchEnd={onTouchEnd} ref={ref} className={styles.text}>
           <h2 className="largeText">{text}</h2>
         </div>
-        <div className={styles.fillerDiv} />
+        <div
+          style={{
+            animationDelay: `${animationOrder * 0.075 + 0.75}s`,
+          }}
+          className={styles.fillerDiv}
+        />
       </div>
     );
   },
