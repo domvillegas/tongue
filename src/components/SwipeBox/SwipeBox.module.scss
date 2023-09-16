@@ -4,15 +4,11 @@
   border-top: 1px solid $white;
   border-bottom: 1px solid $white;
   cursor: pointer;
-  overflow: scroll;
+  overflow: hidden;
   display: flex;
   min-height: 100%;
-
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-  &::-webkit-scrollbar {
-    display: none;
-  }
+  text-decoration: none;
+  color: $white;
 }
 
 .text {

@@ -1,25 +1,22 @@
-import React, { forwardRef, TouchEvent } from "react";
+import React, { forwardRef } from "react";
 import styles from "./SwipeBox.module.scss";
+import Link from "next/link";
 
 interface Props {
-  text: string;
+  data: { text: string; path: string };
   className?: string;
-  onSwipe: () => void;
   animationOrder: number;
-  onClick: () => void;
-  onTouchEnd: (event: TouchEvent<HTMLDivElement>) => void;
 }
 
 const SwipeBox = forwardRef<HTMLDivElement, Props>(
-  ({ text, className, animationOrder, onSwipe, onClick, onTouchEnd }, ref) => {
+  ({ data, className, animationOrder }, ref) => {
     return (
-      <div
-        onScroll={onSwipe}
-        onClick={onClick}
+      <Link
+        href={data.path}
         className={`${styles.swipeBox} ${className ? className : ""}`}
       >
-        <div onTouchEnd={onTouchEnd} ref={ref} className={styles.text}>
-          <h2 className="largeText">{text}</h2>
+        <div ref={ref} className={styles.text}>
+          <h2 className="largeText">{data.text}</h2>
         </div>
         <div
           style={{
@@ -27,7 +24,7 @@ const SwipeBox = forwardRef<HTMLDivElement, Props>(
           }}
           className={styles.fillerDiv}
         />
-      </div>
+      </Link>
     );
   },
 );

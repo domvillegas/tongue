@@ -2,7 +2,6 @@ import React from "react";
 import { AppProps } from "next/app";
 import "../styles/globals-styles.scss";
 import Head from "next/head";
-import { OpacityContextProvider } from "@/contexts/opacity";
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -15,9 +14,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           rel="stylesheet"
         />
       </Head>
-      <OpacityContextProvider>
-        <Component {...pageProps} />
-      </OpacityContextProvider>
+      <Component {...pageProps} />
     </>
   );
 }
