@@ -1,6 +1,7 @@
 import React, { forwardRef } from "react";
 import styles from "./SwipeBox.module.scss";
-import Link from "next/link";
+import { useRouter } from "next/router";
+import { useTransitionRoute } from "@/hooks/useTransitionRoute";
 
 interface Props {
   data: { text: string; path: string };
@@ -10,9 +11,17 @@ interface Props {
 
 const SwipeBox = forwardRef<HTMLDivElement, Props>(
   ({ data, className, animationOrder }, ref) => {
+    const route = useRouter();
+
+    const clickHandler = (path: string) => {
+      useTransitionRoute(path, route);
+    };
+
     return (
-      <Link
-        href={data.path}
+      <div
+        onClick={() => {
+          clickHandler(data.path);
+        }}
         className={`${styles.swipeBox} ${className ? className : ""}`}
       >
         <div ref={ref} className={styles.text}>
@@ -24,7 +33,7 @@ const SwipeBox = forwardRef<HTMLDivElement, Props>(
           }}
           className={styles.fillerDiv}
         />
-      </Link>
+      </div>
     );
   },
 );

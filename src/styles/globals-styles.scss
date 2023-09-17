@@ -28,3 +28,35 @@ h2 {
 .bold {
   font-weight: 700;
 }
+
+.fadeOut {
+  animation-name: fadeOut;
+  animation-duration: 0.75s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 0.75s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

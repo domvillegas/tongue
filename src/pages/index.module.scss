@@ -2,8 +2,9 @@
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  text-shadow: 3px 4px 9px #000000;
 
-  > a {
+  > div {
     flex: 1;
     min-height: 100%;
   }
