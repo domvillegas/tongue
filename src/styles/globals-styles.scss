@@ -1,5 +1,7 @@
 @use "./global-utils.module.scss" as *;
 
+$animation-duration: 0.75s;
+
 html,
 body {
   height: 100%;
@@ -31,7 +33,7 @@ h2 {
 
 .fadeOut {
   animation-name: fadeOut;
-  animation-duration: 0.75s;
+  animation-duration: $animation-duration;
   animation-fill-mode: forwards;
 }
 
@@ -47,7 +49,7 @@ h2 {
 
 .fadeIn {
   animation-name: fadeIn;
-  animation-duration: 0.75s;
+  animation-duration: $animation-duration;
   animation-fill-mode: forwards;
 }
 

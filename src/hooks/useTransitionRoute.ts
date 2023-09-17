@@ -7,11 +7,5 @@ export const useTransitionRoute = (path: string, router: NextRouter) => {
 
   return setTimeout(() => {
     router.push(path);
-    body.classList.add("fadeIn");
-
-    setTimeout(() => {
-      body.classList.remove("fadeOut");
-      body.classList.remove("fadeIn");
-    }, 500);
   }, 750);
 };

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./index.module.scss";
 import BackButton from "@/components/MenuButton/MenuButton";
 
@@ -26,6 +26,16 @@ const data = [
 ];
 
 const Archive = () => {
+  useEffect(() => {
+    const body = document.getElementsByTagName("body")[0];
+    body.classList.add("fadeIn");
+
+    setTimeout(() => {
+      body.classList.remove("fadeOut");
+      body.classList.remove("fadeIn");
+    }, 750);
+  });
+
   return (
     <div className={styles.archive}>
       <BackButton />

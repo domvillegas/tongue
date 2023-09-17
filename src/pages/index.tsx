@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import SwipeBox from "@/components/SwipeBox/SwipeBox";
 import styles from "./index.module.scss";
 
@@ -12,6 +12,16 @@ const boxData = [
 
 const Home = () => {
   const swipeBoxRefs = useRef<HTMLDivElement[]>([]);
+
+  useEffect(() => {
+    const body = document.getElementsByTagName("body")[0];
+    body.classList.add("fadeIn");
+
+    setTimeout(() => {
+      body.classList.remove("fadeOut");
+      body.classList.remove("fadeIn");
+    }, 750);
+  });
 
   return (
     <>
