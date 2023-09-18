@@ -28,8 +28,9 @@
 .contentContainer {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: $global-padding;
   text-shadow: $small-text-shadow;
+  margin-top: auto;
 }
 
 .link {
@@ -38,4 +39,8 @@
   margin: 8px 0;
 
   font-size: 20px !important;
+}
+
+.madeWithLove {
+  margin-top: auto;
 }

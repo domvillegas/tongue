@@ -1,8 +1,11 @@
+@use "../../styles//global-utils.module.scss" as *;
+
 .contact {
   display: flex;
   align-items: center;
   height: 100%;
   justify-content: center;
+  flex-direction: column;
 }
 
 .backgroundImage {
@@ -20,10 +23,11 @@
 
 .contentContainer {
   font-size: 25px;
-  padding: 20px;
+  padding: $global-padding;
   text-align: center;
   display: flex;
   flex-direction: column;
+  margin-top: auto;
 
   i {
     font-size: 30px;
@@ -44,4 +48,8 @@
   i {
     margin: 0 5px;
   }
+}
+
+.madeWithLove {
+  margin-top: auto;
 }

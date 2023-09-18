@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import styles from "./index.module.scss";
 import BackButton from "@/components/MenuButton/MenuButton";
+import MadeWithLove from "@/components/MadeWithLove/MadeWithLove";
 
 const data = [
   {
@@ -33,7 +34,7 @@ const Archive = () => {
     setTimeout(() => {
       body.classList.remove("fadeOut");
       body.classList.remove("fadeIn");
-    }, 750);
+    }, 500);
   });
 
   return (
@@ -51,6 +52,7 @@ const Archive = () => {
           );
         })}
       </div>
+      <MadeWithLove className={styles.madeWithLove} />
     </div>
   );
 };

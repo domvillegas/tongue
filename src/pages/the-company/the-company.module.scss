@@ -1,0 +1,14 @@
+@use "../../styles/global-utils.module.scss" as *;
+
+.contentContainer {
+  padding: $global-padding;
+  max-width: 800px;
+  margin: auto;
+}
+
+.companyDescription {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

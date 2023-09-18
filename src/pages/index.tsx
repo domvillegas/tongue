@@ -20,7 +20,7 @@ const Home = () => {
     setTimeout(() => {
       body.classList.remove("fadeOut");
       body.classList.remove("fadeIn");
-    }, 750);
+    }, 500);
   });
 
   return (

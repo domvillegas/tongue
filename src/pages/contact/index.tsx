@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import styles from "./index.module.scss";
 import MenuButton from "@/components/MenuButton/MenuButton";
+import MadeWithLove from "@/components/MadeWithLove/MadeWithLove";
 
 const Contact = () => {
   useEffect(() => {
@@ -10,7 +11,7 @@ const Contact = () => {
     setTimeout(() => {
       body.classList.remove("fadeOut");
       body.classList.remove("fadeIn");
-    }, 750);
+    }, 500);
   });
 
   return (
@@ -46,6 +47,7 @@ const Contact = () => {
           />
         </div>
       </div>
+      <MadeWithLove className={styles.madeWithLove} />
     </div>
   );
 };
