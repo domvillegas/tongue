@@ -1,7 +1,8 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import SwipeBox from "@/components/SwipeBox/SwipeBox";
 import styles from "./index.module.scss";
 import Image from "next/image";
+import yinyang from "../assets/backgrounds/yinyang.png";
 
 const boxData = [
   { text: "The Company", path: "/the-company" },
@@ -12,8 +13,6 @@ const boxData = [
 ];
 
 const Home = () => {
-  const swipeBoxRefs = useRef<HTMLDivElement[]>([]);
-
   useEffect(() => {
     const body = document.getElementsByTagName("body")[0];
     body.classList.add("homeFadeIn");
@@ -27,12 +26,7 @@ const Home = () => {
   return (
     <>
       <div className={styles.introAnimation}>
-        <Image
-          src="/_next/static/media/yinyang.6d765a1f.png"
-          alt="yinyang"
-          width={200}
-          height={200}
-        />
+        <Image src={yinyang.src} alt="yinyang" width={150} height={150} />
       </div>
       <div className={styles.backgroundImage} />
       <div className={styles.swipeBoxesContainer}>

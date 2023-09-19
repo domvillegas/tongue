@@ -24,6 +24,11 @@ h2 {
 
 i {
   cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    color: #c7c7c7;
+  }
 }
 
 a {
@@ -38,7 +43,7 @@ a {
 .largeText {
   font-size: 45px;
   text-transform: uppercase;
-  color: #dddddd;
+  color: $white;
   transition: 0.3s;
 
   &:hover {
@@ -53,8 +58,8 @@ a {
     font-size: 80px;
   }
 
-  @media (max-width: 499px) {
-    color: $white;
+  @media (min-width: 500px) {
+    color: #dddddd;
   }
 }
 

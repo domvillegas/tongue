@@ -9,12 +9,15 @@ $border-color: rgb(164, 164, 164);
   min-height: 100%;
   text-decoration: none;
   color: $white;
-  width: fit-content;
 
-  @media (max-width: 499px) {
-    width: 100%;
-    border-top: 1px solid $border-color;
-    border-bottom: 1px solid $border-color;
+  width: 100%;
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+
+  @media (min-width: 500px) {
+    width: fit-content;
+    border-top: none;
+    border-bottom: none;
   }
 }
 

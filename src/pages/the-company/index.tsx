@@ -39,7 +39,7 @@ const TheCompany = () => {
         </div>
         {theCompanyData.map((member) => {
           return (
-            <div>
+            <div className={styles.memberDetails}>
               <Image
                 width={240}
                 height={0}
@@ -51,10 +51,12 @@ const TheCompany = () => {
                 src={member.image}
                 alt={member.name}
               />
-              <h2>
-                {member.name} // <span className="nowrap">{member.role}</span>
-              </h2>
-              {member.bio}
+              <div className={styles.memberCopy}>
+                <h2>
+                  {member.name} // <span className="nowrap">{member.role}</span>
+                </h2>
+                {member.bio}
+              </div>
             </div>
           );
         })}
