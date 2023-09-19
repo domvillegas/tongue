@@ -1,3 +1,5 @@
+@use "../styles/global-utils.module.scss" as *;
+
 .swipeBoxesContainer {
   display: flex;
   flex-direction: column;
@@ -20,4 +22,68 @@
   width: 100%;
   height: 100%;
   z-index: -1;
+
+  @media (min-width: 500px) {
+    background-position: 20vw 100%;
+  }
+}
+
+.introAnimation {
+  background: $black;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  z-index: 4;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  animation-name: introAnimation;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+
+  img {
+    animation-name: spinImage;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes introAnimation {
+  0% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+@keyframes spinImage {
+  0% {
+    transform: rotate(0deg);
+    filter: blur(0);
+  }
+
+  20% {
+    transform: rotate(0deg);
+    filter: blur(0);
+  }
+
+  30% {
+    filter: blur(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+    filter: blur(20px);
+  }
 }

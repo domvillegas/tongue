@@ -1,8 +1,16 @@
+@use "../../styles//global-utils.module.scss" as *;
+
 .madeWithLove {
   display: flex;
   justify-content: center;
   width: 100%;
-  font-size: 14px;
+  font-size: 10px;
+  font-family: sans-serif;
+  margin-bottom: 20px;
+
+  @media (min-width: 1500px) {
+    font-size: 14px;
+  }
 
   a {
     margin-left: 5px;

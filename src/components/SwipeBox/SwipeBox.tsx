@@ -6,36 +6,27 @@ import { useTransitionRoute } from "@/hooks/useTransitionRoute";
 interface Props {
   data: { text: string; path: string };
   className?: string;
-  animationOrder: number;
 }
 
-const SwipeBox = forwardRef<HTMLDivElement, Props>(
-  ({ data, className, animationOrder }, ref) => {
-    const route = useRouter();
+const SwipeBox = ({ data, className }: Props) => {
+  const route = useRouter();
 
-    const clickHandler = (path: string) => {
-      useTransitionRoute(path, route);
-    };
+  const clickHandler = (path: string) => {
+    useTransitionRoute(path, route);
+  };
 
-    return (
-      <div
-        onClick={() => {
-          clickHandler(data.path);
-        }}
-        className={`${styles.swipeBox} ${className ? className : ""}`}
-      >
-        <div ref={ref} className={styles.text}>
-          <h2 className="largeText">{data.text}</h2>
-        </div>
-        <div
-          style={{
-            animationDelay: `${animationOrder * 0.075 + 0.75}s`,
-          }}
-          className={styles.fillerDiv}
-        />
+  return (
+    <div
+      onClick={() => {
+        clickHandler(data.path);
+      }}
+      className={`${styles.swipeBox} ${className ? className : ""}`}
+    >
+      <div className={styles.text}>
+        <h2 className="largeText">{data.text}</h2>
       </div>
-    );
-  },
-);
+    </div>
+  );
+};
 
 export default SwipeBox;

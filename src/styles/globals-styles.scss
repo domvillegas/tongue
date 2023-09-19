@@ -26,9 +26,36 @@ i {
   cursor: pointer;
 }
 
+a {
+  color: $white;
+  transition: 0.3s;
+
+  &:hover {
+    color: #c7c7c7;
+  }
+}
+
 .largeText {
-  font-size: 50px;
+  font-size: 45px;
   text-transform: uppercase;
+  color: #dddddd;
+  transition: 0.3s;
+
+  &:hover {
+    color: white;
+  }
+
+  @media (min-width: 1500px) {
+    font-size: 125px !important;
+  }
+
+  @media (min-width: 1000px) {
+    font-size: 80px;
+  }
+
+  @media (max-width: 499px) {
+    color: $white;
+  }
 }
 
 .bold {
@@ -69,4 +96,10 @@ i {
   to {
     opacity: 1;
   }
+}
+
+.homeFadeIn {
+  animation-name: fadeIn;
+  animation-duration: 0;
+  animation-fill-mode: forwards;
 }

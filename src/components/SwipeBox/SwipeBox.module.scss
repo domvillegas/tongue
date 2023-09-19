@@ -1,14 +1,21 @@
 @use "../../styles/global-utils.module.scss" as *;
 
+$border-color: rgb(164, 164, 164);
+
 .swipeBox {
-  border-top: 1px solid $white;
-  border-bottom: 1px solid $white;
   cursor: pointer;
   overflow: hidden;
   display: flex;
   min-height: 100%;
   text-decoration: none;
   color: $white;
+  width: fit-content;
+
+  @media (max-width: 499px) {
+    width: 100%;
+    border-top: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+  }
 }
 
 .text {
@@ -16,50 +23,14 @@
   align-items: center;
   min-width: 90%;
   min-height: 100%;
-  box-shadow: 0px 10px 20px black;
-  z-index: 999;
+  z-index: 3;
   padding-left: 20px;
-}
 
-.fillerDiv {
-  min-width: 100vw;
-  min-height: 100%;
-  background: $white;
-  margin: 0;
-  padding: 0;
-  opacity: 0;
-  animation-name: fillerDivOpacity;
-  animation-duration: 1.8s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-
-@keyframes fillerDivOpacity {
-  0% {
-    opacity: 0;
+  @media (min-width: 1000px) {
+    margin-left: 10vw;
   }
 
-  10% {
-    opacity: 0.7;
-  }
-
-  41% {
-    opacity: 1;
-  }
-
-  45% {
-    opacity: 0.5;
-  }
-
-  47% {
-    opacity: 0.4;
-  }
-
-  48% {
-    opacity: 0.4;
-  }
-
-  50% {
-    opacity: 0;
+  @media (min-width: 500px) {
+    margin-left: 5vw;
   }
 }

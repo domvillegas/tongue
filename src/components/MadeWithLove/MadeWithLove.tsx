@@ -8,11 +8,10 @@ interface Props {
 const MadeWithLove = ({ className }: Props) => {
   return (
     <span className={`${styles.madeWithLove} ${className ? className : ""}`}>
-      Website made with love by{" "}
+      Made by{" "}
       <a href="https://www.domvillegas.com/" target="_blank">
-        Dom
+        domvillegas.com
       </a>
-      .
     </span>
   );
 };
