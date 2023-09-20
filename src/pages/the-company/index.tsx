@@ -61,7 +61,7 @@ const TheCompany = () => {
           );
         })}
       </div>
-      <MadeWithLove />
+      <MadeWithLove className={styles.madeWithLove} />
     </>
   );
 };
