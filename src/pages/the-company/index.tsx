@@ -37,9 +37,9 @@ const TheCompany = () => {
             building a base in both Southern California and Portland, Or.
           </p>
         </div>
-        {theCompanyData.map((member) => {
+        {theCompanyData.map((member, index) => {
           return (
-            <div className={styles.memberDetails}>
+            <div key={index} className={styles.memberDetails}>
               <Image
                 width={240}
                 height={0}

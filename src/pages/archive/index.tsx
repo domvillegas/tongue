@@ -43,9 +43,9 @@ const Archive = () => {
       <div className={styles.backgroundImage} />
       <div className={styles.contentContainer}>
         <h1>Videos</h1>
-        {data.map((video) => {
+        {data.map((video, index) => {
           return (
-            <a className={styles.link} href={video.link} target="_blank">
+            <a key={index} className={styles.link} href={video.link} target="_blank">
               <span>{video.title}</span> - <span>{video.location}</span>{" "}
               <i className="fas fa-arrow-right" />
             </a>
