@@ -247,7 +247,7 @@ export const theCompanyData = [
           a c e s, Mirage II, and Coming Up Roses. You can go to{" "}
           <a href="Vimeo.com/kellyoconnor" target="_blank">
             Vimeo.com/kellyoconnor
-          </a>
+          </a>{" "}
           or{" "}
           <a href="kellyoconnor1212.wixsite.com/makeitbabe" target="_blank">
             kellyoconnor1212.wixsite.com/makeitbabe
