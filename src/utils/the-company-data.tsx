@@ -1,6 +1,10 @@
-import adri from "../../assets/backgrounds/kelly.jpg";
-
-console.log(adri.src);
+import steph from "../assets/backgrounds/steph.jpg";
+import lauren from "../assets/backgrounds/lauren-bio.jpg";
+import adri from "../assets/backgrounds/adri.jpg";
+import anna from "../assets/backgrounds/anna.jpg";
+import taylor from "../assets/backgrounds/taylor.jpeg";
+import beth from "../assets/backgrounds/beth.jpg";
+import kelly from "../assets/backgrounds/kelly.jpg";
 
 export const theCompanyData = [
   {
@@ -59,7 +63,7 @@ export const theCompanyData = [
       </>
     ),
     role: "artistic director",
-    image: "/_next/static/media/steph.81011641.jpg",
+    image: steph.src,
   },
   {
     name: "Luaren Smith",
@@ -93,7 +97,7 @@ export const theCompanyData = [
       </>
     ),
     role: "rehearsal director/performer",
-    image: "/_next/static/media/lauren-bio.f60bc868.jpg",
+    image: lauren.src,
   },
   {
     name: "Adrianna Audoma",
@@ -117,7 +121,7 @@ export const theCompanyData = [
       </p>
     ),
     role: "performer",
-    image: "/_next/static/media/adri.919f6935.jpg",
+    image: adri.src,
   },
   {
     name: "Anna Olmstead",
@@ -140,7 +144,7 @@ export const theCompanyData = [
       </p>
     ),
     role: "performer",
-    image: "/_next/static/media/anna.2aabdc9f.jpg",
+    image: anna.src,
   },
   {
     name: "Taylor Pasquale",
@@ -162,7 +166,7 @@ export const theCompanyData = [
       </p>
     ),
     role: "performer",
-    image: "/_next/static/media/taylor.d69fbfc1.jpeg",
+    image: taylor.src,
   },
   {
     name: "Beth Whelan",
@@ -200,7 +204,7 @@ export const theCompanyData = [
       </>
     ),
     role: "performer",
-    image: "/_next/static/media/beth.a1407fc1.jpg",
+    image: beth.src,
   },
   {
     name: "Kelly O'Connor",
@@ -266,6 +270,6 @@ export const theCompanyData = [
       </>
     ),
     role: "performer",
-    image: "/_next/static/media/kelly.b637031a.jpg",
+    image: kelly.src,
   },
 ];

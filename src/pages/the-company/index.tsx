@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import MenuButton from "@/components/MenuButton/MenuButton";
 import styles from "./the-company.module.scss";
-import { theCompanyData } from "./the-company-data";
+import { theCompanyData } from "../../utils/the-company-data";
 import Image from "next/image";
 import MadeWithLove from "@/components/MadeWithLove/MadeWithLove";
 
