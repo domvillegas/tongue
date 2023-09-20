@@ -6,13 +6,12 @@ import { useRouter } from "next/router";
 const MenuButton = () => {
   const route = useRouter();
 
+  const clickHandler = () => {
+    useTransitionRoute("/", route);
+  };
+
   return (
-    <div
-      className={styles.menuButton}
-      onClick={() => {
-        useTransitionRoute("/", route);
-      }}
-    >
+    <div className={styles.menuButton} onClick={clickHandler}>
       Menu
     </div>
   );
