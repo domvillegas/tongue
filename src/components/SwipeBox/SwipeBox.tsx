@@ -1,7 +1,7 @@
 import React, { forwardRef } from "react";
 import styles from "./SwipeBox.module.scss";
 import { useRouter } from "next/router";
-import { useTransitionRoute } from "@/hooks/useTransitionRoute";
+import { pushRouteWithFade } from "@/utils/helpers";
 
 interface Props {
   data: { text: string; path: string };
@@ -12,7 +12,7 @@ const SwipeBox = ({ data, className }: Props) => {
   const route = useRouter();
 
   const clickHandler = (path: string) => {
-    useTransitionRoute(path, route);
+    pushRouteWithFade(path, route);
   };
 
   return (
