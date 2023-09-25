@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import styles from "./index.module.scss";
 import BackButton from "@/components/MenuButton/MenuButton";
 import MadeWithLove from "@/components/MadeWithLove/MadeWithLove";
-import BackgroundImage from "@/components/BackgroundImage/BackgroundImage";
 import backgroundImage from "../../assets/backgrounds/archive.jpg";
 
 const data = [
