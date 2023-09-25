@@ -10,9 +10,8 @@
 
 .backgroundImage {
   filter: grayscale(1);
-  background-image: url("../../assets/backgrounds/contact.jpg");
-  background-size: cover;
-  background-position: 50% 20vh;
+  object-fit: cover;
+  object-position: 50% 20vh;
   position: absolute;
   top: 0;
   left: 0;
@@ -21,7 +20,7 @@
   z-index: -1;
 
   @media (min-width: 1000px) {
-    background-position: 50% 5vw;
+    object-position: 50% 5vw;
   }
 }
 

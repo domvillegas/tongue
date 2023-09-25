@@ -14,9 +14,8 @@
 }
 
 .backgroundImage {
-  background-image: url("../../assets/backgrounds/archive.jpg");
-  background-size: cover;
-  background-position: 50% 50%;
+  object-fit: cover;
+  object-position: 50% 50%;
   position: absolute;
   top: 0;
   left: 0;

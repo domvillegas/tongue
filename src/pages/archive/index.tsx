@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import styles from "./index.module.scss";
 import BackButton from "@/components/MenuButton/MenuButton";
 import MadeWithLove from "@/components/MadeWithLove/MadeWithLove";
+import BackgroundImage from "@/components/BackgroundImage/BackgroundImage";
+import backgroundImage from "../../assets/backgrounds/archive.jpg";
 
 const data = [
   {
@@ -40,7 +42,11 @@ const Archive = () => {
   return (
     <div className={styles.archive}>
       <BackButton />
-      <div className={styles.backgroundImage} />
+      <img
+        className={styles.backgroundImage}
+        src={backgroundImage.src}
+        alt="Hands"
+      />
       <div className={styles.contentContainer}>
         <h1>Videos</h1>
         {data.map((video, index) => {

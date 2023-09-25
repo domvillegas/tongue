@@ -54,12 +54,9 @@ a {
     font-size: 125px !important;
   }
 
-  @media (min-width: 1000px) {
-    font-size: 80px;
-  }
-
   @media (min-width: 500px) {
     color: #dddddd;
+    font-size: 80px;
   }
 }
 

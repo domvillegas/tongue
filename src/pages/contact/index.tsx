@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import styles from "./index.module.scss";
 import MenuButton from "@/components/MenuButton/MenuButton";
 import MadeWithLove from "@/components/MadeWithLove/MadeWithLove";
+import backgroundImage from "../../assets/backgrounds/contact.jpg";
 
 const Contact = () => {
   useEffect(() => {
@@ -17,7 +18,11 @@ const Contact = () => {
   return (
     <div className={styles.contact}>
       <MenuButton />
-      <div className={styles.backgroundImage} />
+      <img
+        className={styles.backgroundImage}
+        src={backgroundImage.src}
+        alt="Arms"
+      />
       <div className={styles.contentContainer}>
         <span>TONGUEDANCEPROJECT</span>
         <div className={styles.emailDomainClipboardIconContainer}>

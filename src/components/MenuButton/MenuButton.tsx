@@ -12,7 +12,7 @@ const MenuButton = () => {
 
   return (
     <div className={styles.menuButton} onClick={clickHandler}>
-      Menu
+      Home
     </div>
   );
 };

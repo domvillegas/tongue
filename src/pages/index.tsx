@@ -3,6 +3,7 @@ import SwipeBox from "@/components/SwipeBox/SwipeBox";
 import styles from "./index.module.scss";
 import Image from "next/image";
 import yinyang from "../assets/backgrounds/yinyang.png";
+import lauren from "../assets/backgrounds/lauren.jpg";
 
 const boxData = [
   { text: "The Company", path: "/the-company" },
@@ -28,7 +29,7 @@ const Home = () => {
       <div className={styles.introAnimation}>
         <Image src={yinyang.src} alt="yinyang" width={150} height={150} />
       </div>
-      <div className={styles.backgroundImage} />
+      <img className={styles.backgroundImage} src={lauren.src} alt="Lauren" />
       <div className={styles.swipeBoxesContainer}>
         {boxData.map((data, index) => {
           return <SwipeBox key={index} data={data} />;
