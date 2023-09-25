@@ -31,6 +31,12 @@ i {
   }
 }
 
+img {
+  animation-name: fadeIn;
+  animation-duration: $animation-duration;
+  animation-fill-mode: forwards;
+}
+
 a {
   color: $white;
   transition: 0.3s;
