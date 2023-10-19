@@ -1,0 +1,41 @@
+@use "../../styles//global-utils.module.scss" as *;
+
+.inTheRough {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contentContainer {
+  padding: $global-padding;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60vw;
+  max-width: 700px;
+
+  @media (min-width: 500px) {
+    margin-top: auto;
+  }
+
+  .button {
+    margin-bottom: 30px;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 10px;
+  }
+}
+
+.timePlaceContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.madeWithLove {
+  margin-top: auto;
+}
