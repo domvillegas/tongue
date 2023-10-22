@@ -45,6 +45,12 @@ const Contact = () => {
           />
         </div>
       </div>
+      <span className={styles.websiteCredit}>
+        Website made by{" "}
+        <a href="https://www.domvillegas.com/" target="_blank">
+          domvillegas.com
+        </a>
+      </span>
     </div>
   );
 };
