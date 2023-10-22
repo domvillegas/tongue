@@ -56,7 +56,6 @@ const Archive = () => {
               target="_blank"
             >
               <span>{video.title}</span> - <span>{video.location}</span>{" "}
-              <i className="fas fa-arrow-right" />
             </a>
           );
         })}

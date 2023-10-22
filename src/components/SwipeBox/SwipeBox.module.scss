@@ -33,7 +33,11 @@ $border-color: rgb(164, 164, 164);
     margin-left: 10vw;
   }
 
+  @media (min-width: 525px) {
+    margin-left: 5vw !important;
+  }
+
   @media (min-width: 500px) {
-    margin-left: 5vw;
+    margin-left: 1vw;
   }
 }

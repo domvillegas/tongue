@@ -23,22 +23,16 @@ const Contact = () => {
         alt="Arms"
       />
       <div className={styles.contentContainer}>
-        <span>TONGUEDANCEPROJECT</span>
-        <div className={styles.emailDomainClipboardIconContainer}>
-          <span className={styles.emailDomain}>@GMAIL.COM</span>
-          <i
-            className="far fa-clipboard"
-            onClick={() =>
-              navigator.clipboard.writeText("tonguedanceproject@gmail.com")
-            }
-          />
+        <div className={styles.emailContainer}>
+          <span>TONGUEDANCEPROJECT</span>
+          <span>@GMAIL.COM</span>
         </div>
         <div className={styles.instagramPaperPlanIconsContainer}>
           <i
             onClick={() =>
               window.open(
                 "https://www.instagram.com/tonguedanceproject/?hl=en",
-                "_blank",
+                "_blank"
               )
             }
             className="fab fa-instagram icon"
