@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import MadeWithLove from "@/components/MadeWithLove/MadeWithLove";
 import MenuButton from "@/components/MenuButton/MenuButton";
 import styles from "./Upcoming.module.scss";
 
@@ -27,7 +26,6 @@ const Upcoming = () => {
         </a>
         <span>810 SE Belmont St, Portland, OR 97214</span>
       </div>
-      <MadeWithLove className={styles.madeWithLove} />
     </div>
   );
 };

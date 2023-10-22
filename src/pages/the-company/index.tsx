@@ -3,7 +3,6 @@ import MenuButton from "@/components/MenuButton/MenuButton";
 import styles from "./the-company.module.scss";
 import { theCompanyData } from "../../utils/the-company-data";
 import Image from "next/image";
-import MadeWithLove from "@/components/MadeWithLove/MadeWithLove";
 
 const TheCompany = () => {
   useEffect(() => {
@@ -61,7 +60,6 @@ const TheCompany = () => {
           );
         })}
       </div>
-      <MadeWithLove className={styles.madeWithLove} />
     </>
   );
 };

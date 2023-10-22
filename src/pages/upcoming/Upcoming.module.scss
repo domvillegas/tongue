@@ -14,9 +14,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: auto;
-}
 
-.madeWithLove {
-  margin-top: auto;
+  a {
+    border-bottom: 1px solid white;
+    text-decoration: none;
+  }
 }

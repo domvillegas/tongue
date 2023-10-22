@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import MadeWithLove from "@/components/MadeWithLove/MadeWithLove";
 import MenuButton from "@/components/MenuButton/MenuButton";
 import styles from "./InTheRough.module.scss";
 
@@ -38,6 +37,7 @@ const InTheRough = () => {
               New Expressive Works
             </a>
           </span>
+          <span>Applications due December 1, 2023</span>
         </div>
         <a
           className={styles.button}
@@ -46,9 +46,7 @@ const InTheRough = () => {
         >
           Apply Here
         </a>
-        <span>Applications due December 1, 2023</span>
       </div>
-      <MadeWithLove className={styles.madeWithLove} />
     </div>
   );
 };

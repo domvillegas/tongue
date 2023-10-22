@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import styles from "./index.module.scss";
 import BackButton from "@/components/MenuButton/MenuButton";
-import MadeWithLove from "@/components/MadeWithLove/MadeWithLove";
 import backgroundImage from "../../assets/backgrounds/archive.jpg";
 
 const data = [
@@ -62,7 +61,6 @@ const Archive = () => {
           );
         })}
       </div>
-      <MadeWithLove className={styles.madeWithLove} />
     </div>
   );
 };
