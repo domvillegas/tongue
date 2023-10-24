@@ -5,6 +5,7 @@ import anna from "../assets/backgrounds/anna.jpg";
 import taylor from "../assets/backgrounds/taylor.jpeg";
 import beth from "../assets/backgrounds/beth.jpg";
 import kelly from "../assets/backgrounds/kelly.jpg";
+import jae from "../assets/backgrounds/jae.jpg";
 
 export const theCompanyData = [
   {
@@ -271,5 +272,22 @@ export const theCompanyData = [
     ),
     role: "performer",
     image: kelly.src,
+  },
+  {
+    name: "Jae Seung Hancock",
+    bio: (
+      <>
+        <p>
+          Jae was born in Seoul, South Korea, but grew up in a suburb of the
+          Twin Cities. After graduating with a B.A. in Dance and Arts Management
+          from the University of Wisconsin – Stevens Point, Jae relocated to
+          Portland. They have worked with Disjecta Contemporary Art Center, CoHo
+          Productions, The Holding Project in 2018 and Theatre Diaspora,
+          Oregon's only professional AAPI theater company.
+        </p>
+      </>
+    ),
+    role: "performer",
+    image: jae.src,
   },
 ];

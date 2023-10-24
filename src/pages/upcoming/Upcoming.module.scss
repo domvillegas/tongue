@@ -8,6 +8,29 @@
   flex-direction: column;
 }
 
+.backgroundImage {
+  filter: grayscale(1);
+  object-fit: cover;
+  object-position: 50% 5vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.backgroundImageGradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: black;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 50%, black 85%);
+}
+
 .contentContainer {
   padding: $global-padding;
   text-align: center;
@@ -15,6 +38,7 @@
   flex-direction: column;
   align-items: center;
   font-size: 25px;
+  z-index: 2;
 
   a {
     border-bottom: 1px solid white;

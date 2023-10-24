@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import MenuButton from "@/components/MenuButton/MenuButton";
 import styles from "./InTheRough.module.scss";
+import flyer from "../../assets/backgrounds/in-the-rough.jpg";
 
 const InTheRough = () => {
   useEffect(() => {
@@ -29,16 +30,6 @@ const InTheRough = () => {
           improvisers, and seasoned choreographers and allows creators to put
           their work in front of an audience in an intimate, informal setting.{" "}
         </p>
-        <div className={styles.timePlaceContainer}>
-          <span>WHEN: February 3, 2024</span>
-          <span>
-            WHERE:{" "}
-            <a href="https://newexpressiveworks.org/" target="_blank">
-              New Expressive Works
-            </a>
-          </span>
-          <span>Applications due December 1, 2023</span>
-        </div>
         <a
           className={styles.button}
           href="https://docs.google.com/forms/d/e/1FAIpQLScP-nH8MsVoa-eX9myx9-w5wYnWvGKoeRhbM7ZKHB5-EyQYPA/viewform?usp=sf_link"
@@ -46,6 +37,7 @@ const InTheRough = () => {
         >
           Apply Here
         </a>
+        <img src={flyer.src} />
       </div>
     </div>
   );

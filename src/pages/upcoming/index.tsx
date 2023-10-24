@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import MenuButton from "@/components/MenuButton/MenuButton";
 import styles from "./Upcoming.module.scss";
+import backgroundImage from "../../assets/backgrounds/hugging.jpg";
 
 const Upcoming = () => {
   useEffect(() => {
@@ -15,6 +16,12 @@ const Upcoming = () => {
 
   return (
     <div className={styles.upcoming}>
+      <div className={styles.backgroundImageGradient} />
+      <img
+        className={styles.backgroundImage}
+        src={backgroundImage.src}
+        alt="Adri and Lauren hugging"
+      />
       <MenuButton />
       <div className={styles.contentContainer}>
         <span>

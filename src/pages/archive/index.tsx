@@ -40,6 +40,7 @@ const Archive = () => {
   return (
     <div className={styles.archive}>
       <BackButton />
+      <div className={styles.backgroundImageGradient} />
       <img
         className={styles.backgroundImage}
         src={backgroundImage.src}
