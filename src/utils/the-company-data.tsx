@@ -280,7 +280,7 @@ export const theCompanyData = [
         <p>
           Jae was born in Seoul, South Korea, but grew up in a suburb of the
           Twin Cities. After graduating with a B.A. in Dance and Arts Management
-          from the University of Wisconsin – Stevens Point, Jae relocated to
+          from the University of Wisconsin - Stevens Point, Jae relocated to
           Portland. They have worked with Disjecta Contemporary Art Center, CoHo
           Productions, The Holding Project in 2018 and Theatre Diaspora,
           Oregon's only professional AAPI theater company.
