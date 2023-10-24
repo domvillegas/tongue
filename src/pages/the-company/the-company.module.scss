@@ -26,6 +26,11 @@
     min-height: 100vh;
   }
 
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
   i {
     display: none;
   }
@@ -39,12 +44,11 @@
       width: fit-content;
       animation-name: pointer;
       animation-duration: 1.5s;
-      animation-delay: 2s;
+      animation-delay: 1s;
       animation-iteration-count: infinite;
 
       &:hover {
         color: $white;
-        cursor: default;
       }
     }
   }

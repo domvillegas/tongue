@@ -35,7 +35,9 @@ const TheCompany = () => {
             since its inception. Tongue Dance Project is currently working on
             building a base in both Southern California and Portland, Or.
           </p>
-          <i className="fa fa-chevron-down" />
+          <a href="/the-company#chevron">
+            <i id="chevron" className="fa fa-chevron-down" />
+          </a>
         </div>
         {theCompanyData.map((member, index) => {
           return (
