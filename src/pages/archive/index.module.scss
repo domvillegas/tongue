@@ -33,6 +33,7 @@
   z-index: 0;
   background: black;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0) 60%, black 85%);
+  pointer-events: none;
 }
 
 .contentContainer {
