@@ -246,11 +246,14 @@ export const theCompanyData = [
           metephor, & specific choreography. Since graduating Kelly has
           choreographed and presented 3 independent projects titled o p e n s p
           a c e s, Mirage II, and Coming Up Roses. You can go to{" "}
-          <a href="Vimeo.com/kellyoconnor" target="_blank">
-            Vimeo.com/kellyoconnor
+          <a href="https://vimeo.com/kellyoconnor" target="_blank">
+            vimeo.com/kellyoconnor
           </a>{" "}
           or{" "}
-          <a href="kellyoconnor1212.wixsite.com/makeitbabe" target="_blank">
+          <a
+            href="https://kellyoconnor1212.wixsite.com/makeitbabe"
+            target="_blank"
+          >
             kellyoconnor1212.wixsite.com/makeitbabe
           </a>{" "}
           to view some of Kelly’s past creations.
