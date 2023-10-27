@@ -212,40 +212,32 @@ export const theCompanyData = [
     bio: (
       <>
         <p>
-          Kelly O’Connor is a movement artist, creator, and educator born and
-          raised in Pasadena, California. Kelly began dancing at the age of
-          three at Pasadena Civic Ballet Center where she fell in love with
-          Ballet, Jazz, Tap, Hip Hop, Modern Dance and was first exposed to
-          contemporary dance from her high school dance teacher Liz Adamis.
-          Kelly went on to earn her BFA in Dance with a Minor in Applied
-          Psychology from UC Santa Barbara. While at UCSB Kelly works by
-          choreographers such as Andrea Miller, Shen Wei, Monica Bill Barnes,
-          Jose Limone, Jacqulyn Buglisi, Anna Halprin, Simone Forte, Yvonne
-          Rainer, Nancy Colahan, Christina Mcarthy and countless student
-          choreographers.{" "}
+          Kelly O’Connor is a movement artist and educator born and raised in
+          Pasadena, California. Kelly began dancing at the age of three at
+          Pasadena Civic Ballet Center. Kelly went on to earn her BFA in Dance
+          with a Minor in Applied Psychology from UC Santa Barbara. While at
+          UCSB Kelly performed as much as possible in works by choreographers
+          such as Andrea Miller, Shen Wei, Monica Bill Barnes, Jose Limone,
+          Jacqulyn Buglisi, Anna Halprin, Simone Forte, Yvonne Rainer, Nancy
+          Colahan, Christina Mcarthy and countless student choreographers.
         </p>
         <p>
-          While at UCSB Kelly fell in love with GAGA, a movement language and
-          improvisation practice created by Ohad Nahirin. Kelly then spent the
-          next three summers (2016-2018) studying GAGA at workshops in SF, LA,
-          and Tel Aviv. Kelly’s experiences embodying the movement language of
-          GAGA as well as her improvisation and choreography classes with her
-          teacher and mentor Brooke Smiley initiated Kelly’s own physical
-          research on somatic based approaches to improvisation and
-          choreography. She became fascinated by the physiological +
+          During her years at UCSB Kelly first fell in love with GAGA and then
+          with exploring many other somatic approaches to movement and
+          improvisation. She became fascinated by the physiological +
           psychological intricacies of the body/mind connection as well as the
           positive psychological effects of dancing and creating.
         </p>
         <p>
-          Kelly developed two pieces while at UCSB, both of which researched the
-          intricacies of emotional intelligence and personal growth: moodwings
-          and Poetry of a Mute Soul. Her choreography is rooted in a personal
-          practice of exploring the relationship between emotional processing
-          and patterns of tension in the body. Kelly crafts embodied experiences
-          of personal growth by combining improvisation tasks, embodied
-          metephor, & specific choreography. Since graduating Kelly has
-          choreographed and presented 3 independent projects titled o p e n s p
-          a c e s, Mirage II, and Coming Up Roses. You can go to{" "}
+          Kelly has choreographed and presented five full pieces all of which
+          explore the intricacies of emotional intelligence and personal growth.
+          Her pieces Moodwings, Poetry of a Mute Soul, were presented at UCSB
+          then o p e n s p a c e s, Mirage II, and Coming Up Roses were
+          presented in small festivals in Southern California. Her choreography
+          is rooted in a personal practice of exploring the relationship between
+          emotional processing and patterns of tension in the body. Kelly crafts
+          embodied experiences of personal growth by combining improvisation
+          tasks, embodied metephor, & specific choreography. You can go to{" "}
           <a href="https://vimeo.com/kellyoconnor" target="_blank">
             vimeo.com/kellyoconnor
           </a>{" "}
@@ -259,17 +251,16 @@ export const theCompanyData = [
           to view some of Kelly’s past creations.
         </p>
         <p>
-          Kelly has also been spending her time teaching Contemporary Dance to
-          various age groups ranging from 8-18 first at Pasadena Civic Ballet
-          (2017 - 2021), and now at NW Dance Project here in Portland
-          (2021-present). She is Passionate about providing a safe space for
-          young people to explore and develop their fullest self expression
-          through the language of dance.{" "}
+          Kelly has been teaching Contemporary Dance to ages 8-18 since 2018 at
+          various studios in Southern California and is currently teaching at NW
+          Dance Project here in Portland, OR. She is passionate about providing
+          a safe space for young people to explore the language of dance and
+          develop their self expression.
         </p>
         <p>
           Kelly joined Tounge Dance Project in September of 2022 and is
-          extremely grateful to have found her place in this group of strong,
-          talented, and inspiring women to continue dancing and creating with!
+          extremely grateful to have crossed paths with this group of strong,
+          passionate, and inspiring women to continue creating with!
         </p>
       </>
     ),
