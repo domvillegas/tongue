@@ -3,6 +3,7 @@ import styles from "./MenuButton.module.scss";
 import { pushRouteWithFade } from "@/utils/helpers";
 import { useRouter } from "next/router";
 import yinyang from '../../assets/backgrounds/yinyang.png';
+import tongueLogo from '../../assets/backgrounds/tongue-logo.png';
 import Image from "next/image";
 
 const MenuButton = () => {
@@ -14,7 +15,7 @@ const MenuButton = () => {
 
   return (
     <div className={styles.menuButton} onClick={clickHandler}>
-        <Image src={yinyang.src} alt="yinyang" width={50} height={50} />
+        <Image src={tongueLogo.src} alt="yinyang" width={50} height={50} />
     </div>
   );
 };
