@@ -32,10 +32,10 @@ const InTheRough = () => {
         </p>
         <a
           className={styles.button}
-          href="https://docs.google.com/forms/d/e/1FAIpQLScP-nH8MsVoa-eX9myx9-w5wYnWvGKoeRhbM7ZKHB5-EyQYPA/viewform?usp=sf_link"
+          href="https://intherough.brownpapertickets.com/"
           target="_blank"
         >
-          Apply Here
+          Buy Tickets
         </a>
         <img src={flyer.src} />
       </div>
